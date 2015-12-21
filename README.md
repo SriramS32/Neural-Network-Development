@@ -16,10 +16,9 @@ somehow hidden in the information of the weights. For ease of explanation, let's
 - output = activation(hidden node * hidden weight)
 - hidden node = inverse(output) / hidden weight
 
-The process can be repeated to find the input. 
-
-However, this method will only work for this simplest case. As there are more hidden nodes and inputs:
+The process can be repeated to find the input. However, this method will only work for this simplest case. As there are more hidden nodes and inputs:
 - output = activation(hNode1 *hWeight1 + hNode2 *hWeight2)
+
 Although, the weights and output are known, the nodes could have various solutions or in fact, infinite (in the case above, as there are two unknown variables but only one equation). I was thinking of some way to collate various equations in the networks like all the equations of hidden nodes to outputs in order to solve the values for hidden nodes and then inputs. To do so, there would need to be an n x n ... x n network and solving for inputs becomes as simple as solving a matrix with n unknowns and n variables (hopefully none are linearly dependent). This is pretty unreasonable in most applicable neural networks, but I wanted to see if it was theoretically possible. I realized that the domain and range of the activation function is annoying when trying to reverse and results in a lot of imaginary calculations, so I tried to change the activation function (but it didn't work :( )
 
 Sigh. At this point, I thought it may not be possible to find an exact solution, and I arrived at the idea that I could train the inputs just as I trained the weights. I looked at the multivariable calculations performed for the training of the weights. The error was minimized with respect to the inputs while the weights were kept constant, and I coded the math into new train functions. At this point, I was not expecting much, but I actually saw meaningful input reversals!!! 
