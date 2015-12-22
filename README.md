@@ -33,3 +33,8 @@ I thought of making an n x n x n matrix with n inputs, hidden nodes, and outputs
 Finally, I accepted the fact that there may not be a super easy way to ideally reverse the inputs back as there could be many solutions
 among other problems. I decided to train the inputs.
 - I minimized the error function with respect to the inputs and kept the weights constant rather than changing the weights while assuming a constant input. I found that the reverse training converged very quickly.
+
+#License
+BSD
+
+Sriram
