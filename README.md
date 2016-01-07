@@ -24,15 +24,7 @@ Although, the weights and output are known, the nodes could have various solutio
 Sigh. At this point, I thought it may not be possible to find an exact solution, and I arrived at the idea that I could train the inputs just as I trained the weights. I looked at the multivariable calculations performed for the training of the weights. The error was minimized with respect to the inputs while the weights were kept constant, and I coded the math into new train functions. At this point, I was not expecting much, but I actually saw meaningful input reversals!!! 
 I tried to make a video of the network drawing an image by training the inputs over epochs, but the network actually trained inputs really fast with a speedy convergence in many different cases.
 
-Old Notes:
-Initially, I thought of decomposition techniques and finding how much inputs
-could be worth based on the magnitude of weights and magnitude of hidden nodes or output nodes.
-- This way did not really work as the inputs could be many sets of magnitude resulting in the same conditions of weights and magnitude of hidden nodes - various solutions
-I thought of making an n x n x n matrix with n inputs, hidden nodes, and outputs
-- As such I would have a set of linear equations, the problem had to do with the logistic function in the domain and range reversal.
-Finally, I accepted the fact that there may not be a super easy way to ideally reverse the inputs back as there could be many solutions
-among other problems. I decided to train the inputs.
-- I minimized the error function with respect to the inputs and kept the weights constant rather than changing the weights while assuming a constant input. I found that the reverse training converged very quickly.
+More information on website, or contact me :).
 
 #License
 BSD
