@@ -5,6 +5,7 @@ The most recent and useful files are in the other project - Reverse Neural Netwo
 
 - StarterNet.java: first MLP built that recognized 81 inputs as a 9 x 9 square of 1's and 0's.
 - ReverseNetDiffAct.java: MLP that still only recognized the numbers in text file but has a different activation function - didn't work
+- ReverseNetTrainNode.java: MLP that can recognize the numbers in text file and has the reverse algorithm implemented.
 
 
 #Thought Process
