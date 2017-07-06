@@ -3,15 +3,15 @@
 Hello, here I will be displaying the progression of interest in neural networks.
 The most recent and useful files are in the other project - Reverse Neural Network. The files in this repo are sparsely commented with the important information in the files of the other project
 
-- StarterNet.java: first MLP built that recognized 81 inputs as a 9 x 9 square of 1's and 0's.
-- ReverseNetDiffAct.java: MLP that still only recognized the numbers in text file but has a different activation function - didn't work
-- ReverseNetTrainNode.java: MLP that can recognize the numbers in text file and has the reverse algorithm implemented.
+- `StarterNet.java`: first MLP built that recognized 81 inputs as a 9 x 9 square of 1's and 0's.
+- `ReverseNetDiffAct.java`: MLP that still only recognized the numbers in text file but has a different activation function - didn't work
+- `ReverseNetTrainNode.java`: MLP that can recognize the numbers in text file and has the reverse algorithm implemented.
 ...more to come
 - implemented inputs of pictures
 - color images
 - video of image being created
 
-#Thought Process
+## Thought Process
 I started with developing a single layer MLP that recognized 81 inputs fed in as a 9 x 9 square of 1's and 0's. The network progressed to recognizing images, and trippling the input number to include RGB colors.
 
 I wanted to be able to create images from the neural network and reverse the inputs back. I thought I must be able to retrieve the ideal solutions
@@ -30,11 +30,7 @@ I tried to make a video of the network drawing an image by training the inputs o
 
 More information on website, or contact me :).
 
-#License
+**License**
 BSD
 
 Sriram
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/SriramS32/neural-network-development/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
